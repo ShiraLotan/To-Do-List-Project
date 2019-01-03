@@ -1,0 +1,92 @@
+body {
+  background-image: url("./img/background img.jpg");
+  text-align: center;
+}
+
+body h1 {
+  font-family: "ZCOOL KuaiLe", cursive;
+  font-size: 60px;
+  text-shadow: 5px 5px 8px #d8c4b4;
+}
+
+body form .NotesPart {
+  display: inline-block;
+}
+
+body form .NotesPart .smallNotes {
+  width: 200px;
+  height: 200px;
+}
+
+body form .buttonsPart .btn1 {
+  float: right;
+  margin-right: 169px;
+  margin-top: 10px;
+  width: 70px;
+  background-color: #2d9618;
+  border: none;
+}
+
+body form .buttonsPart .btn1:hover {
+  background-color: #083b06;
+}
+
+body form .buttonsPart .btn2 {
+  float: right;
+  margin: 10px;
+  margin-top: -14px;
+  border: none;
+  background-color: #c7443b;
+}
+
+body form .buttonsPart .btn2:hover {
+  background-color: #882107;
+}
+
+body form .notesClass {
+  background-image: url("./img/notebook paper.jpg");
+  height: 400px;
+  width: 900px;
+  margin: auto;
+  padding: auto;
+  border: 2px solid burlywood;
+  border-radius: 15px;
+}
+
+body form .notesClass .mainNoteHeadline {
+  font-family: "ZCOOL KuaiLe", cursive;
+  font-size: 35px;
+  font-family: 'Poiret One', cursive;
+  margin-top: 17px;
+}
+
+body form .notesClass .mainNoteHeadline .form-control {
+  float: right;
+  width: 72%;
+  height: 100%;
+}
+
+body form .notesClass input {
+  background: transparent;
+  border: none;
+}
+
+body form .notesClass .timeAndDate {
+  float: left;
+  margin-top: 167px;
+  margin-left: 5px;
+  font-family: fantasy;
+  font-size: 17px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+body form .notesClass .timeAndDate .timeInput {
+  float: left;
+}
+
+body form .notesClass .timeAndDate label {
+  font-size: 25px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

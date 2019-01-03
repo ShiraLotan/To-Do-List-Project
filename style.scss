@@ -1,0 +1,127 @@
+$headlinSize: 60px;
+$headlinefont:'ZCOOL KuaiLe', cursive;
+$DateAndTimeFont: fantasy;
+
+body{
+    background-image: url("./img/background\ img.jpg");
+    text-align: center;
+    h1{
+        font-family: $headlinefont;
+        font-size: $headlinSize;
+        text-shadow: 5px 5px 8px rgb(216, 196, 180);
+
+
+    }
+    form{
+        .NotesPart{
+            display: inline-block;
+
+            .smallNotes{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .buttonsPart{
+
+
+.btn1{
+    float: right;
+    margin-right: 169px;
+    margin-top:10px;
+    width: 70px;
+    background-color: rgb(45, 150, 24);
+    border: none;
+    &:hover {
+        background-color:rgb(8, 59, 6);
+    }
+    
+    }
+    .btn2{
+    float: right;
+    margin: 10px;
+    margin-top:-14px;
+    border: none;
+    background-color: rgb(199, 68, 59);
+    
+    &:hover {
+        background-color:rgb(136, 33, 7);
+    }
+    }
+        }
+        .notesClass{
+            background-image: url("./img/notebook\ paper.jpg");
+            height: 400px;
+            width: 900px;
+            margin:auto;
+            padding:auto;
+            border: 2px solid burlywood;
+            border-radius: 15px;
+
+            .mainNoteHeadline{
+                font-family: $headlinefont;
+                font-size: 35px;
+                font-family: 'Poiret One', cursive;
+                margin-top: 17px;
+
+                .form-control{
+                    float: right;
+                    width: 72%;
+                    height: 100%;
+                }  
+          
+            }
+
+            input{
+                background: transparent;
+                border: none;
+            }
+
+            .timeAndDate{
+                float: left;
+                margin-top: 167px;
+                margin-left: 5px;
+                font-family: $DateAndTimeFont;
+                font-size: 17px;
+                position: sticky;
+                
+                    .timeInput{
+                        float: left;   
+                    }   
+                    label{
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                    
+                }
+
+
+
+    }
+
+    
+    
+}
+
+
+
+   
+
+  
+
+  
+
+  
+}
+
+
+   
+
+
+
+
+
+
+
+
+
+    
