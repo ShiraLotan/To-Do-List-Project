@@ -11,11 +11,17 @@ body h1 {
 
 body form .NotesPart {
   display: inline-block;
+  margin-bottom: 40px;
 }
 
 body form .NotesPart .smallNotes {
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 300px;
+  margin-right: 40px;
+}
+
+body form .buttonsPart {
+  margin-right: 65px;
 }
 
 body form .buttonsPart .btn1 {
@@ -58,12 +64,17 @@ body form .notesClass .mainNoteHeadline {
   font-size: 35px;
   font-family: 'Poiret One', cursive;
   margin-top: 17px;
+  float: left;
 }
 
-body form .notesClass .mainNoteHeadline .form-control {
+body form .notesClass .form-control {
   float: right;
-  width: 72%;
+  width: 71%;
   height: 100%;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  line-height: 2.3;
 }
 
 body form .notesClass input {
@@ -73,7 +84,7 @@ body form .notesClass input {
 
 body form .notesClass .timeAndDate {
   float: left;
-  margin-top: 167px;
+  margin-top: 230px;
   margin-left: 5px;
   font-family: fantasy;
   font-size: 17px;

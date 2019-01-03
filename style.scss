@@ -15,14 +15,17 @@ body{
     form{
         .NotesPart{
             display: inline-block;
+            margin-bottom: 40px;
 
             .smallNotes{
-                width: 200px;
-                height: 200px;
+                width: 280px;
+                height: 300px;
+                margin-right: 40px;
+
             }
         }
         .buttonsPart{
-
+            margin-right: 65px;
 
 .btn1{
     float: right;
@@ -62,14 +65,20 @@ body{
                 font-size: 35px;
                 font-family: 'Poiret One', cursive;
                 margin-top: 17px;
+                float: left;
 
-                .form-control{
-                    float: right;
-                    width: 72%;
-                    height: 100%;
-                }  
+                
           
             }
+            .form-control{
+                float: right;
+                width: 71%;
+                height: 100%;
+                background: transparent;
+                border: none;
+                font-size: 30px;
+                line-height: 2.3;
+            } 
 
             input{
                 background: transparent;
@@ -78,7 +87,7 @@ body{
 
             .timeAndDate{
                 float: left;
-                margin-top: 167px;
+                margin-top: 230px;
                 margin-left: 5px;
                 font-family: $DateAndTimeFont;
                 font-size: 17px;
@@ -93,7 +102,7 @@ body{
                     }
                     
                 }
-
+            
 
 
     }
