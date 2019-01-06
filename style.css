@@ -9,23 +9,16 @@ body h1 {
   text-shadow: 5px 5px 8px #d8c4b4;
 }
 
-body form .NotesPart {
-  display: inline-block;
-  margin-bottom: 40px;
-}
-
-body form .NotesPart .smallNotes {
-  width: 280px;
-  height: 300px;
-  margin-right: 40px;
-}
-
 body form #DivTest div.NotesDesign {
   background-image: url("./img/note1.png");
   background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
-  display: inline-block;
+  height: 300px;
+  width: 300px;
+}
+
+body form #DivTest div.NotesDesign span.spanall {
+  height: 300px;
+  width: 300px;
 }
 
 body form .buttonsPart {

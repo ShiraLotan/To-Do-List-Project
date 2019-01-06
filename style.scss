@@ -3,6 +3,7 @@ $headlinefont:'ZCOOL KuaiLe', cursive;
 $DateAndTimeFont: fantasy;
 
 body{
+    
     background-image: url("./img/background\ img.jpg");
     text-align: center;
     h1{
@@ -13,27 +14,26 @@ body{
 
     }
     form{
-        .NotesPart{
-            display: inline-block;
-            margin-bottom: 40px;
 
-            .smallNotes{
-                width: 280px;
-                height: 300px;
-                margin-right: 40px;
-
-            }
-        }
-        #DivTest{
+     #DivTest{
             
         div.NotesDesign{
-            background-image: url("./img/note1.png");
-            background-repeat: no-repeat;
-            height: 200px;
-            width: 200px;
-            display: inline-block;
+            background-image: url("./img/note1.png") ;        
+                background-repeat: no-repeat;
+            height: 300px;
+            width: 300px;
+            // display: inline-block;
+            // overflow: scroll;
+            // margin: 40px 0 40px 15px;
 
+            
+            span.spanall{
+                
+                height: 300px;
+                width: 300px; 
+            }
                         }
+            
                     }
 
         .buttonsPart{
@@ -80,6 +80,7 @@ body{
                 margin-top: 17px;
                 float: left;
 
+           
                 
           
             }
@@ -91,11 +92,13 @@ body{
                 border: none;
                 font-size: 30px;
                 line-height: 2.3;
+                
             } 
 
             input{
                 background: transparent;
                 border: none;
+                
             }
 
             .timeAndDate{
@@ -136,7 +139,7 @@ body{
 }
 
 
-   
+
 
 
 
