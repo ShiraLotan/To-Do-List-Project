@@ -1,3 +1,15 @@
+.fa-times-circle {
+  background: transparent;
+  float: right;
+  margin-top: -8px;
+  border: none;
+  border-radius: 200px;
+}
+
+.fa-times-circle:hover {
+  background-color: #db764e;
+}
+
 body {
   background-image: url("./img/background img.jpg");
   text-align: center;
@@ -9,16 +21,27 @@ body h1 {
   text-shadow: 5px 5px 8px #d8c4b4;
 }
 
-body form #DivTest div.NotesDesign {
-  background-image: url("./img/note1.png");
-  background-repeat: no-repeat;
-  height: 300px;
-  width: 300px;
+body form #DivTest {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-body form #DivTest div.NotesDesign span.spanall {
-  height: 300px;
-  width: 300px;
+body form #DivTest .NotesDesign {
+  background-image: url("./img/4.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 320px;
+  display: inline-block;
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+}
+
+body form #DivTest .NotesDesign:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 body form .buttonsPart {
