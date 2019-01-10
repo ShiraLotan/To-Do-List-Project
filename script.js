@@ -53,8 +53,8 @@ function showNotes(mission, date, time) {
 
     divName.html("<span class='spanall'><span class='spancontent'>" + mission + " </span></br><span class='spandate'>" + date + "</br>" + time + "</span></span>")
 
-    $(".DivTest").append(divName);
-    divName.append(ExitBtn);
+    $(".DivTest").append(".divName");
+    $(".divName").append(".ExitBtn");
 }
 
 
