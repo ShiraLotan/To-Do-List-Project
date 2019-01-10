@@ -1,7 +1,7 @@
 .fa-times-circle {
   background: transparent;
+  position: relative;
   float: right;
-  margin-top: -8px;
   border: none;
   border-radius: 200px;
 }
@@ -34,7 +34,12 @@ body form #DivTest .NotesDesign {
   width: 320px;
   display: inline-block;
   font-family: 'Indie Flower', cursive;
-  font-size: 25px;
+  font-size: 22px;
+}
+
+body form #DivTest .NotesDesign .spanall {
+  position: relative;
+  top: 90px;
 }
 
 body form #DivTest .NotesDesign:hover {
@@ -45,14 +50,11 @@ body form #DivTest .NotesDesign:hover {
 }
 
 body form .buttonsPart {
-  margin-right: 65px;
+  width: 50%;
+  margin-left: 35%;
 }
 
 body form .buttonsPart .btn1 {
-  float: right;
-  margin-right: 169px;
-  margin-top: 10px;
-  width: 70px;
   background-color: #2d9618;
   border: none;
 }
@@ -62,9 +64,6 @@ body form .buttonsPart .btn1:hover {
 }
 
 body form .buttonsPart .btn2 {
-  float: right;
-  margin: 10px;
-  margin-top: -14px;
   border: none;
   background-color: #c7443b;
 }
@@ -83,7 +82,7 @@ body form .notesClass {
   border-radius: 15px;
 }
 
-body form .notesClass .mainNoteHeadline {
+body form .mainNoteHeadline {
   font-family: "ZCOOL KuaiLe", cursive;
   font-size: 35px;
   font-family: 'Poiret One', cursive;
@@ -91,7 +90,7 @@ body form .notesClass .mainNoteHeadline {
   float: left;
 }
 
-body form .notesClass .form-control {
+body form .form-control {
   float: right;
   width: 71%;
   height: 100%;
@@ -101,27 +100,64 @@ body form .notesClass .form-control {
   line-height: 2.3;
 }
 
-body form .notesClass input {
+body form input {
   background: transparent;
   border: none;
 }
 
-body form .notesClass .timeAndDate {
+body form .timeAndDate {
   float: left;
-  margin-top: 230px;
-  margin-left: 5px;
+  margin-top: 285px;
+  margin-left: -3px;
   font-family: fantasy;
   font-size: 17px;
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
 }
 
-body form .notesClass .timeAndDate .timeInput {
+body form .timeAndDate .timeInput {
   float: left;
 }
 
-body form .notesClass .timeAndDate label {
+body form .timeAndDate label {
   font-size: 25px;
   font-weight: bold;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  .timeAndDate {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  textarea {
+    margin-left: 0%;
+  }
+}
+
+/********Scroll Bar Design****/
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f3d77c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e6da9f;
 }
 /*# sourceMappingURL=style.css.map */

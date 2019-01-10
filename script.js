@@ -16,11 +16,11 @@ backup()
 
 function savemission() {
     var mission = document.forms["mainBoard"]["exampleFormControlTextarea1"].value;
-    document.forms["mainBoard"]["exampleFormControlTextarea1"].value="";
+    document.forms["mainBoard"]["exampleFormControlTextarea1"].value = "";
     var date = document.forms["mainBoard"]["dateInput"].value;
-    document.forms["mainBoard"]["dateInput"].value="";
+    document.forms["mainBoard"]["dateInput"].value = "";
     var time = document.forms["mainBoard"]["timeInput"].value;
-    document.forms["mainBoard"]["timeInput"].value="";
+    document.forms["mainBoard"]["timeInput"].value = "";
 
 
     if (mission == "") {
@@ -51,8 +51,7 @@ function showNotes(mission, date, time) {
     ExitBtn.className = "far fa-times-circle";
     ExitBtn.onclick = removeNote;
 
-
-    divName.innerHTML = "<span class='spanall'><span class='spancontent'>" + mission + " </span></br><span class='spandate'>" + date + "</span></br><span class='spantime'>" + time + "</span></span>";
+    divName.innerHTML = "<span class='spanall'><span class='spancontent'>" + mission + " </span></br><span class='spandate'>" + date + "</br>" + time + "</span></span>";
 
     cardDiv.append(divName);
     divName.append(ExitBtn);
@@ -60,10 +59,17 @@ function showNotes(mission, date, time) {
 
 
 
-function removeNote() {
-    this.parentElement.removeChild(divName);
+function removeNote(mission, date, time) {
 
-    localStorage.setItem("arr", JSON.stringify(arr));
+    this.parentElement.parentElement.removeChild(this.parentElement);
+
+    for (var i = 0; i < arr.length; i++) {
+        if (mission === arr[i].content && date === arr[i].date && time === arr[i].time) {
+            var j = arr[i].indexOf(arr[i])
+            arr.splice(j,1)
+            localStorage.setItem("arr", JSON.stringify(arr));
+        }
+    }
 }
 
 
