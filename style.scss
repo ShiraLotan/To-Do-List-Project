@@ -5,7 +5,6 @@ $DateAndTimeFont: fantasy;
 
 .fa-times-circle {
     background: transparent;
-    position: relative;
     float: right;
     border: none;
     border-radius: 200px;
@@ -45,24 +44,25 @@ body{
             display: inline-block;
             font-family: 'Indie Flower', cursive;
             font-size: 22px;
-            // animation: ease-in;
-            // animation-duration: 4s;
+    
            
 
 
-            .spanall{
+            span.spancontent{
                 position: relative;
-                top: 90px; 
-                // overflow-y: scroll;
+                top: 90px;
+                overflow-y: scroll;
                 // word-break: break-all;
-                // height: 180px;
-                // width: 180px;  
+                height: 180px;
+                width: 180px;  
                 // box-sizing: border-box;
 
- 
-            }
                 // .spandate{
+                //     // position: absolute;
+                //     // top: 0px;
                 // }
+            }
+            
 
            
 
@@ -168,16 +168,16 @@ body{
 
        /* Extra small devices (phones, 600px and down) */
 
-       @media screen and (max-width: 600px) {
-        .timeAndDate{
-            margin-top: 0px;
-            padding-top:0px;
-       }}
+    //    @media screen and (max-width: 600px) {
+    //     .timeAndDate{
+    //         margin-top: 0px;
+    //         padding-top:0px;
+    //    }}
 
-       @media screen and (max-width: 600px) {
-        textarea{
-            margin-left: 0%;
-       }}
+    //    @media screen and (max-width: 600px) {
+    //     textarea{
+    //         margin-left: 0%;
+    //    }}
 /********Scroll Bar Design****/
 
  /* width */

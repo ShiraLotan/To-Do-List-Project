@@ -1,3 +1,4 @@
+$( document ).ready(function() {
 
 var arr = [];
 
@@ -13,15 +14,15 @@ function backup() {
 
 backup()
 
+$(".btn1").on("click", function(){
+    var mission = $("#exampleFormControlTextarea1").val();
+                    $("#exampleFormControlTextarea1").val('');
 
-function savemission() {
-    var mission = document.forms["mainBoard"]["exampleFormControlTextarea1"].value;
-    document.forms["mainBoard"]["exampleFormControlTextarea1"].value = "";
-    var date = document.forms["mainBoard"]["dateInput"].value;
-    document.forms["mainBoard"]["dateInput"].value = "";
-    var time = document.forms["mainBoard"]["timeInput"].value;
-    document.forms["mainBoard"]["timeInput"].value = "";
+    var date = $(".dateinp").val();
+                 $(".dateinp").val('');
 
+    var time = $(".timeinp").val();
+                $(".timeinp").val('');
 
     if (mission == "") {
         alert("Please fill in a task!");
@@ -39,21 +40,20 @@ function savemission() {
         localStorage.setItem("arr", JSON.stringify(arr));
         showNotes(mission, date, time)
     }
-}
+})
 
 function showNotes(mission, date, time) {
-    var cardDiv = document.getElementById("DivTest");
-    var divName = document.createElement("div");
-    var ExitBtn = document.createElement("button");
+    var divName = document.createElement("div").addClass("divName");
+    var ExitBtn = document.createElement("button").addClass("ExitBtn");
 
 
-    divName.className = "NotesDesign";
-    ExitBtn.className = "far fa-times-circle";
+    $(".divName").addClass("NotesDesign");
+    ExitBtn.addClass("far fa-times-circle");
     ExitBtn.onclick = removeNote;
 
-    divName.innerHTML = "<span class='spanall'><span class='spancontent'>" + mission + " </span></br><span class='spandate'>" + date + "</br>" + time + "</span></span>";
+    divName.html("<span class='spanall'><span class='spancontent'>" + mission + " </span></br><span class='spandate'>" + date + "</br>" + time + "</span></span>")
 
-    cardDiv.append(divName);
+    $(".DivTest").append(divName);
     divName.append(ExitBtn);
 }
 
@@ -88,3 +88,5 @@ function deleteForm() {
     document.forms["mainBoard"]["timeInput"].value = "";
 }
 
+
+});
