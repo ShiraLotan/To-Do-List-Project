@@ -46,12 +46,27 @@ function showNotes(mission, date, time) {
     var divName = document.createElement("div");
     var ExitBtn = document.createElement("button");
 
+    /************Creat Span**********/
+    var Scontent = document.createElement("span")
+    var Sdate = document.createElement("span")
+    var Stime = document.createElement("span")
+
+    Scontent.className = "Scontent";
+    Sdate.className="Sdate";
+    Stime.className = "Stime";
+
+    Scontent.append(mission);
+    Sdate.append(date);
+    Stime.append(time);
+    /********************************/
 
     divName.className = "NotesDesign";
     ExitBtn.className = "far fa-times-circle";
     ExitBtn.onclick = removeNote;
 
-    divName.innerHTML = "<span class='spanall'><span class='spancontent'>" + mission + " </span></br><span class='spandate'>" + date + "</br>" + time + "</span></span>";
+    divName.append(Scontent);
+    divName.append(Sdate);
+    divName.append(Stime);
 
     cardDiv.append(divName);
     divName.append(ExitBtn);
@@ -63,10 +78,15 @@ function removeNote(mission, date, time) {
 
     this.parentElement.parentElement.removeChild(this.parentElement);
 
+    var note = this.parentElement.children[0].innerHTML;
+    var date = this.parentElement.children[1].innerHTML;
+    var time = this.parentElement.children[2].innerHTML;
+
+
     for (var i = 0; i < arr.length; i++) {
-        if (mission === arr[i].content && date === arr[i].date && time === arr[i].time) {
+        if (note === arr[i].content && date === arr[i].date && time === arr[i].time) {
             var j = arr[i].indexOf(arr[i])
-            arr.splice(j,1)
+            arr.splice(j, 1)
             localStorage.setItem("arr", JSON.stringify(arr));
         }
     }
