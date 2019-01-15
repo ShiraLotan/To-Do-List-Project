@@ -85,7 +85,7 @@ function removeNote(mission, date, time) {
 
     for (var i = 0; i < arr.length; i++) {
         if (note === arr[i].content && date === arr[i].date && time === arr[i].time) {
-            var j = arr[i].indexOf(arr[i])
+            var j = arr.indexOf(arr[i])
             arr.splice(j, 1)
             localStorage.setItem("arr", JSON.stringify(arr));
         }

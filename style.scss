@@ -27,14 +27,13 @@ body{
         font-family: $headlinefont;
         font-size: $headlinSize;
         text-shadow: 5px 5px 8px rgb(216, 196, 180);
-
   
 
     }
     form{
 
      #DivTest{
-        margin-top: 50px;
+        margin-top: 150px;
         margin-bottom: 50px;
 
         .NotesDesign{
@@ -46,9 +45,11 @@ body{
             display: inline-block;
             font-family: 'Indie Flower', cursive;
             font-size: 22px;
-
-            // animation: ease-in;
-            // animation-duration: 4s;
+            margin-right: 12px;
+           
+             
+            animation: ease-in;
+            animation-duration: 4s;
            
 
 
@@ -56,9 +57,11 @@ body{
                 position: absolute;
                 overflow-y: scroll;
                 margin-top: 60px;
-                width: 230px;  
+                width: 225px;  
                 height: 215px;
-                text-align: left;              
+                margin-left:-23px;
+                text-align: left;     
+                
                 
                 
             }
@@ -80,14 +83,16 @@ body{
             }
 
         .buttonsPart{
-            width: 50%;
-            margin-left: 35%;
-        
-        
+            width: 97%;
+            position: absolute;
+
 
 .btn1{
     background-color: rgb(45, 150, 24);
     border: none;
+    width: 100px;
+    float: right;
+    margin-right: 200px;
     &:hover {
         background-color:rgb(8, 59, 6);
     }
@@ -95,7 +100,10 @@ body{
     
     }
     .btn2{
+    width: 100px;
     border: none;
+    margin-top:-24px;
+    float: right;
     background-color: rgb(199, 68, 59);
     
     &:hover {
@@ -111,6 +119,8 @@ body{
             padding:auto;
             border: 2px solid burlywood;
             border-radius: 15px;
+
+           
 
     
                        } 
@@ -172,39 +182,62 @@ body{
 
        /* Extra small devices (phones, 600px and down) */
 
-       @media screen and (max-width: 600px) {
-        .timeAndDate{
-            margin-top: 0px;
-            padding-top:0px;
-       }}
+    //    @media screen and (max-width: 600px) {
+    //     .timeAndDate{
+    //         margin-top: 0px;
+    //         padding-top:0px;
+    //    }}
 
-       @media screen and (max-width: 600px) {
-        textarea{
-            margin-left: 0%;
-       }}
+       @media screen and (max-width: 900px) {
+        // #exampleFormControlTextarea1{
+        // }
+
+        .mainNoteHeadline{
+            display: none;
+        }
+}
+
+
+       @media screen and (max-width: 433px) {
+        .buttonsPart{
+        display: inline;
+        }
+         .btn2{
+                margin-left: -300px;
+            }
+        
+        // div.timeAndDate{
+        //     // float: right;
+        // }
+   
+    }
+
+     
+        
+
 /********Scroll Bar Design****/
 
- /* width */
-::-webkit-scrollbar {
-    width: 20px;
-  }
+//  /* width */
+// ::-webkit-scrollbar {
+//     width: 20px;
+//   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-  }
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 5px grey; 
+//     border-radius: 10px;
+//   }
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(243, 215, 124); 
-    border-radius: 10px;
-  }
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: rgb(243, 215, 124); 
+//     border-radius: 10px;
+//   }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #e6da9f; 
-  }
+//   /* Handle on hover */
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: #e6da9f; 
+//   }
        
 
  
