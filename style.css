@@ -37,10 +37,27 @@ body form #DivTest .NotesDesign {
   font-family: 'Indie Flower', cursive;
   font-size: 22px;
   margin-right: 12px;
-  -webkit-animation: ease-in;
-          animation: ease-in;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  /*******Fading In*******/
+  -webkit-animation: fadein 1s;
+  /*******End Fading In*******/
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body form #DivTest .NotesDesign .Scontent {

@@ -47,10 +47,19 @@ body{
             font-size: 22px;
             margin-right: 12px;
            
-             
-            animation: ease-in;
-            animation-duration: 4s;
+         /*******Fading In*******/    
+           -webkit-animation: fadein 1s;
+            
+           @keyframes fadein{
+               0%{
+                   opacity: 0;
+               }
+               100%{
+                   opacity: 1;
+               }
+           }
            
+         /*******End Fading In*******/    
 
 
             .Scontent{
@@ -205,11 +214,9 @@ body{
          .btn2{
                 margin-left: -300px;
             }
+
         
-        // div.timeAndDate{
-        //     // float: right;
-        // }
-   
+     
     }
 
      
